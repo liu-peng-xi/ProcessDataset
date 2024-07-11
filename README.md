@@ -13,7 +13,11 @@ python3 merge_by_timestamp.py --file1 /data/SNB/interactive-updates-sf1/inserts/
 python3 csv_to_txt.py --input_file /data/SNB/social_network-sf1-CsvBasic-StringDateFormatter/dynamic/person_knows_person_0_0.csv --output_file /data/SNB/social_network-sf1-CsvBasic-StringDateFormatter/dynamic/person_knows_person_0_0.txt --mapping_output /data/SNB/social_network-sf1-CsvBasic-StringDateFormatter/dynamic/person_knows_person_0_0_map.txt
 
 第四步：先把静态边load到内存里成邻接vector，之后就是每进行一个插入或删除操作就更新一下这个邻接vector，然后再进行下一个操作，最后把所有经过的操作按顺序写到一个新文件中
+
+编译
 g++ -o process_graph_operations process_graph_operations.cpp
+
+
 # bufferSize 是操作的数量，也就是缓冲区中的操作行数，可以改大
 # <graph_file> <operations_file> <output_file> <buffer_size>
 
