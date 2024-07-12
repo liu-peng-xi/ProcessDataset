@@ -22,3 +22,11 @@ g++ -o process_graph_operations process_graph_operations.cpp
 # <graph_file> <operations_file> <output_file> <buffer_size>
 
 ./process_graph_operations /data/SNB/social_network-sf1-CsvBasic-StringDateFormatter/dynamic/person_knows_person_0_0.txt /data/SNB/interactive-updates-sf1/deletes/insert_delete_merged.txt /data/SNB/interactive-updates-sf1/deletes/graph_process.txt 100
+
+
+输出静态图点边数并加权 edge_add_weight.py
+
+python3 edge_add_weight.py <静态图文件> <生成的带权图文件>
+
+python3 edge_add_weight.py /data/SNB/social_network-sf100-CsvBasic-LongDateFormatter/dynamic/person_knows_person_0_0.txt /data/SNB/social_n
+etwork-sf100-CsvBasic-LongDateFormatter/dynamic/person_knows_person_0_0_with_weights.txt
