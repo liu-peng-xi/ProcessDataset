@@ -37,3 +37,10 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+# 输出静态图点边数并加权
+
+# python3 edge_add_weight.py <静态图文件> <生成的带权图文件>
+
+# python3 edge_add_weight.py /data/SNB/social_network-sf100-CsvBasic-LongDateFormatter/dynamic/person_knows_person_0_0.txt /data/SNB/social_n etwork-sf100-CsvBasic-LongDateFormatter/dynamic/person_knows_person_0_0_with_weights.txt
